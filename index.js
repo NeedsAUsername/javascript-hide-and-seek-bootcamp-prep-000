@@ -31,18 +31,20 @@ function increaseRankBy(n) {
 }
 */
 
+
+// final version!!
 function rankIncrease(child, increase) {
   for (let i = 0; i < rankedclass[child].children.length; i += 1) {
     rankedclass[child].children[i].innerHTML = parseInt(rankedclass[child].children[i].innerHTML) + increase;
   }
 }
-
-
 function increaseRankBy(n) {
   for (let i = 0; i< rankedclass.length; i+= 1) {
     rankIncrease(i, n)
   }
 }
+
+
 
 function deepestChild() {
  return document.querySelector('#grand-node div div div div')
