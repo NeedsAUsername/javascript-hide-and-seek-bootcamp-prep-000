@@ -17,6 +17,16 @@ function increaseRankBy(n) {
 }
 
 
+function increaseRankBy(n) {
+  var first = rankedclass[0]
+  var second = rankedclass[1]
+  for (var i = 0; i < first.length; i += 1) {
+    first.children[i] = parseInt(first.children[i].innerHTML) + n;
+  }
+  for (var o = 0; o < second.lenth; o += 1) {
+    second.children[o] = parseInt(first.children[o].innerHTML) + n;
+  }
+}
 
 /*
 for (var i = 0; i < list.children.length; i += 1) {
