@@ -27,5 +27,5 @@ for (var i = 0; i < list.children.length; i += 1) {
 */
 
 function deepestChild() {
-  document.querySelector('#grand-node div div div div').innerHTML
+ return document.querySelector('#grand-node div div div div').innerHTML
 }
