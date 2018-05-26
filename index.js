@@ -33,7 +33,7 @@ function increaseRankBy(n) {
 
 function rankIncrease(child, increase) {
   for (let i = 0; i < rankedclass[child].children.length; i += 1) {
-    rankedclass[child].children[increase].innerHTML = parseInt(rankedclass[child].children[increase].innerHTML) + n;
+    rankedclass[child].children[i].innerHTML = parseInt(rankedclass[child].children[i].innerHTML) + increase;
   }
 }
 
