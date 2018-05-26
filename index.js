@@ -6,7 +6,7 @@ function nestedTarget() {
   return document.querySelector('#nested .target');
 }
 
-const rankedclass = document.querySelectorAll('.ranked-list')
+const rankedclass = document.querySelectorAll('.ranked-list');
 
 /* first version
 function increaseRankBy(n) {
@@ -40,12 +40,12 @@ function rankIncrease(child, increase) {
 }
 function increaseRankBy(n) {
   for (let i = 0; i< rankedclass.length; i+= 1) {
-    rankIncrease(i, n)
+    rankIncrease(i, n);
   }
 }
 
 
 
 function deepestChild() {
- return document.querySelector('#grand-node div div div div')
+ return document.querySelector('#grand-node div div div div');
 }
