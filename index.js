@@ -23,10 +23,10 @@ function increaseRankBy(n) {
   var first = rankedclass[0]
   var second = rankedclass[1]
   for (var i = 0; i < first.length; i += 1) {
-    first.children[i] = parseInt(first.children[i].innerHTML) + n;
+    first.children[i].innerHTML = parseInt(first.children[i].innerHTML) + n;
   }
   for (var o = 0; o < second.length; o += 1) {
-    second.children[o] = parseInt(first.children[o].innerHTML) + n;
+    second.children[o].innerHTML = parseInt(first.children[o].innerHTML) + n;
   }
 }
 
